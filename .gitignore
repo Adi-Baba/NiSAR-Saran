@@ -1,0 +1,11 @@
+# Source granules are large and access-controlled; use data/manifest.tsv to verify local copies.
+data/source/New/*.h5
+data/source/New/*.hdf5
+
+# Rebuildable binary intermediates and local build products.
+analysis/paper1/*.bin
+analysis/modular-math/rust-workspace/target/
+analysis/modular-math/hotspot-artifacts/Fig/high_resolution_panels/
+__pycache__/
+*.py[cod]
+.venv/

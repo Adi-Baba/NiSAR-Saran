@@ -1,0 +1,11 @@
+[package]
+name = "audit-hdf5"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+nz-hdf5 = { path = "../../../../../../nisar-zeta/crates/nz-hdf5" }
+hdf5 = { git = "https://github.com/aldanor/hdf5-rust", features = ["static", "zlib"] }
+ndarray = "0.15"

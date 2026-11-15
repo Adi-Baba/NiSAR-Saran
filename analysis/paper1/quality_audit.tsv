@@ -1,0 +1,8 @@
+mask_class	n	mean_db	sd_db	negative_fraction	positive_fraction	gt3db_fraction
+both_mask_eq_1	573376411	1.024706590	3.015938556	0.353832211	0.646167789	0.243153343
+before_eq_1_after_other	57707	0.956822694	2.910067315	0.360424212	0.639575788	0.235985236
+before_other_after_eq_1	96350	0.972544491	3.146123039	0.381971977	0.618028023	0.239107421
+neither_mask_eq_1	41020269	1.029782436	4.363211467	0.395299553	0.604700447	0.242300239
+mask_changed_n	9579758
+power_pair_valid_n	614550737
+claim_limit	quality sensitivity only; frozen Paper 1 result unchanged

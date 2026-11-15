@@ -1,0 +1,9 @@
+date	gandak_inflow_min_cumecs	gandak_inflow_max_cumecs	rainfall_context_mm	independent_imagery	meaning	source
+2026-08-12	NA	NA	NA	ESA Sentinel-2 pre-event image	before reference	https://www.esa.int/ESA_Multimedia/Images/2026/08/Sentinel-2_captures_before_and_after_Nepal_flash_flood
+2026-08-14	NA	NA	NA	NA	NISAR before acquisition	https://cmr.earthdata.nasa.gov/search/concepts/G4283874053-ASF.json
+2026-08-26	2450.40	4745.02	114.5	UNOSAT PlanetScope event imagery	NISAR after acquisition; Nepal event / Gandak response window	https://sandrp.in/2026/11/05/2026-making-sense-of-gandak-flood-ii/
+2026-08-27	2747.86	4144.46	NA	ESA Sentinel-2 post-event; UNOSAT Sentinel-2	post-event independent imagery in upper Nepal	https://www.esa.int/ESA_Multimedia/Images/2026/08/Sentinel-2_captures_before_and_after_Nepal_flash_flood
+2026-08-28	2566.57	2892.27	NA	NA	downstream inflow context	https://sandrp.in/2026/11/05/2026-making-sense-of-gandak-flood-ii/
+2026-08-29	2501.41	2892.27	NA	NA	 downstream inflow context	https://sandrp.in/2026/11/05/2026-making-sense-of-gandak-flood-ii/
+2026-08-30	2827.19	5116.14	NA	NA	second inflow rise	https://sandrp.in/2026/11/05/2026-making-sense-of-gandak-flood-ii/
+2026-08-31	3158.64	3371.10	NA	NA	continued elevated inflow	https://sandrp.in/2026/11/05/2026-making-sense-of-gandak-flood-ii/

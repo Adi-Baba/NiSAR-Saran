@@ -1,0 +1,17 @@
+[package]
+name = "audit-runner"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+audit-core.workspace = true
+audit-distribution = { path = "../audit-distribution" }
+audit-hdf5 = { path = "../audit-hdf5" }
+audit-ledger = { path = "../audit-ledger" }
+audit-spatial = { path = "../audit-spatial" }
+audit-model = { path = "../audit-model" }
+audit-complex = { path = "../audit-complex" }
+audit-inference = { path = "../audit-inference" }
+nz-core = { path = "../../../../../../nisar-zeta/crates/nz-core" }

@@ -1,0 +1,32 @@
+nz_gcov_change=1
+tool=nz gcov-change
+executable_path=external_nisar-zeta_binary_not_in_this_repository
+executable_bytes=7953600
+executable_sha256=39b9d3477b2adf365558192202fae067b242216ed6c89c49512840fef92729d0
+before_path=data/source/New/NISAR_L2_PR_GCOV_028_026_A_015_4005_DHDH_A_20260814T234704_20260814T234738_P05023_N_F_J_001.h5
+before_bytes=6857687040
+before_sha256=5654bff526e0c5e6d76f73ad551fb8452660b428879b9f921798e1ce0e0f5552
+after_path=data/source/New/NISAR_L2_PR_GCOV_029_026_A_015_4005_DHDH_A_20260826T234704_20260826T234738_P05023_N_F_J_001.h5
+after_bytes=6853492736
+after_sha256=3a95175ad8453fffc8dffbdb4767fcd05a3add544067b377e6c1d10d00bfa02f
+layer=/science/LSAR/GCOV/grids/frequencyA/HHHH
+observable=gcov_db_change:10*log10(after/before)
+units=1 linear power
+mask_rule=mask==1 both scenes, 1-pixel erosion
+quality_exclusion=inputDataExceptionMask!=0 (empty this pair)
+no_data=non-positive or non-finite power -> None
+stride=8
+slab_rows=256
+row_bands=64
+pixels_eroded_valid=573230377
+pixels_measured=573230377
+change_mean_db=1.024813
+change_std_db=3.015708
+change_min_db=-38.150219
+change_max_db=43.664070
+claim_limit=observed calibrated-backscatter change only; no flooding, erosion, wetness, or causation without external context
+output:change_db_stride_f32le.bin:bytes=74955780 sha256=83016673ddc74eb236fc1b1ec7ea08e23b0c063540c01ae5ed6aa300fea2545c
+output:change_valid_stride_u8.bin:bytes=18738945 sha256=cfc83890fba65dfb4255c34fab8458a3b8a63fcc382a6f45bb5ebd791a8f8bf7
+output:grid_meta.txt:bytes=474 sha256=6dd71b5a67bc3f0e17dec1182faa59d7875e4cb2fb61acdacd182ef72fc42e1e
+output:rowband_stats.tsv:bytes=3771 sha256=7e4f1e7f8e419f767e82d6bd9755a9769c87c9d6d59b71eba2c6531e07ace234
+output:histogram.tsv:bytes=756 sha256=9b027b4001ebc50fbcf6bf221a39ba6e6573d042da2501d81acea1959baa2c7f

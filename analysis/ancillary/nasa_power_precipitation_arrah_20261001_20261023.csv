@@ -1,0 +1,33 @@
+-BEGIN HEADER-
+NASA/POWER Source Native Resolution Daily Data 
+Dates (month/day/year): 10/01/2026 through 10/23/2026 in UTC
+Location: latitude  25.55   longitude 84.66 
+elevation from MERRA-2: Average for 0.5 x 0.625 degree lat/lon region = 68.82 meters
+The value for missing source data that cannot be computed or is outside of the sources availability range: -999 
+parameter(s): 
+PRECTOTCORR     MERRA-2 Precipitation Corrected (mm/day) 
+-END HEADER-
+YEAR,DOY,PRECTOTCORR
+2026,274,0.0
+2026,275,0.42
+2026,276,0.17
+2026,277,0.18
+2026,278,3.54
+2026,279,6.51
+2026,280,8.62
+2026,281,3.12
+2026,282,1.79
+2026,283,2.3
+2026,284,1.31
+2026,285,0.9
+2026,286,0.27
+2026,287,0.07
+2026,288,0.15
+2026,289,0.04
+2026,290,0.1
+2026,291,0.0
+2026,292,0.0
+2026,293,0.0
+2026,294,0.0
+2026,295,0.0
+2026,296,0.0

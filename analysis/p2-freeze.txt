@@ -1,0 +1,60 @@
+# P2 freeze — Arrah Track 26 observable, masks, and rules
+
+Rules unchanged from prior run; pair metadata and outputs refreshed for this Track 26 before/after pair.
+
+Frozen layer: `/science/LSAR/GCOV/grids/frequencyA/HHHH` (HH-HH covariance
+power). Units `"1"` (linear power) per dataset `units` attribute, both scenes.
+Decibel conversion `10 * log10(power)` applies to positive-finite power only.
+CARD `outputBackscatterDecibelConversionFormula` dataset exists; the reader
+reports its FixedAscii width as unsupported, so the conversion rests on the
+linear-power unit definition, not on that string.
+
+Frozen change expression (Rust: `nz_hdf5::gcov_db_change`):
+`change_dB = 10 * log10(HHHH_after / HHHH_before)`.
+Negative = after scene darker (backscatter loss). Positive = brighter.
+
+Scenes (from `analysis/qualification.txt`, verdict=PASS):
+before: NISAR_L2_PR_GCOV_028_026_A_015_4005_DHDH_A_20260814T234704_20260814T234738_P05023_N_F_J_001.h5
+  (orbit 5488, 2026-08-14T23:47:04, track 26, frame 15, Left/Ascending, GCOV 1.0.11, P05023)
+after: NISAR_L2_PR_GCOV_029_026_A_015_4005_DHDH_A_20260826T234704_20260826T234738_P05023_N_F_J_001.h5
+  (orbit 5661, 2026-08-26T23:47:04, track 26, frame 15, Left/Ascending, GCOV 1.0.11, P05023)
+12 days apart. Grids match exactly: frequencyA HHHH/HVHV [34344, 34920] Float32,
+frequencyB HHHH/HVHV [4293, 4365] Float32; coords match exactly; EPSG:32644 (UTM 44N).
+
+Valid-mask intersection: pixel valid only when `mask == 1` in both scenes
+(`0` partially focused/invalid, `255` outside acquisition extent).
+FrequencyA joint valid = 573376411 pixels (before_valid=577759514,
+after_valid=577765199, union=582148302; see `analysis/qualification.txt`).
+FrequencyB joint valid = 9246210 pixels (union=9386236).
+Total joint valid pixels (both bands) = 582622621.
+
+Quality exclusions: drop any pixel where `inputDataExceptionMask != 0`.
+The pair has empty exception masks; exclusion remains armed in the pipeline.
+
+No-data handling: any non-positive or non-finite input power yields no-data
+(`None`). NaN propagates as excluded, never as zero. HHHH/HVHV `_FillValue`
+is NaN; mask `_FillValue` is 255.
+
+Edge rule: erode any joint-valid pixel touching a non-joint-valid pixel in its
+8-neighbourhood (1-pixel erosion). Applies at P3 map assembly, before any map
+is viewed. No threshold, layer, or mask tuning after high-change pixels are
+visible.
+
+Deterministic manifest: `analysis/qualification.txt` (Rust-generated) records
+both H5 SHA-256 values plus the `nz` executable path, bytes, and SHA-256.
+Source manifest: `data/manifest.tsv` (Rust-generated via `nz h5-manifest`).
+
+Enforcement: `gcov_db_change_sign_no_data_and_mask_logic` in
+`crates/nz-hdf5` proves sign, no-data, and mask logic on a synthetic fixture.
+
+## P3 run parameters (frozen before execution, no tuning after viewing)
+
+Engine: `nz_hdf5::gcov_change_map` via `nz gcov-change`.
+Stride 8 (raster 4293 x 4365, aligned with frequencyB grid shape).
+Slab 256 rows with 1-row halo for erosion. 64 equal row bands as neutral
+spatial controls. Histogram -10 to +10 dB in 0.5 dB bins plus tails.
+Outputs under `analysis/paper1/`: strided change raster (f32 LE, NaN =
+no-data), strided validity mask (u8, 1 = valid), grid metadata, row-band
+statistics TSV, histogram TSV, provenance text. Water-edge candidacy stays
+pending dated coastline plus rain/river context; until then strongest claim is
+observed calibrated-backscatter change.

@@ -1,0 +1,17 @@
+grid=frequencyA HHHH
+rows=34344
+cols=34920
+stride=8
+out_rows=4293
+out_cols=4365
+row_bands=64
+projection_before=32644
+projection_after=32644
+x_spacing_before=10
+x_spacing_after=10
+y_spacing_before=-10
+y_spacing_after=-10
+x_coords_before=n=34920 first=573125.000000 last=922315.000000
+x_coords_after=n=34920 first=573125.000000 last=922315.000000
+y_coords_before=n=34344 first=3131275.000000 last=2787845.000000
+y_coords_after=n=34344 first=3131275.000000 last=2787845.000000

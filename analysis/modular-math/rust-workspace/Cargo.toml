@@ -1,0 +1,23 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/audit-core",
+    "crates/audit-distribution",
+    "crates/audit-spatial",
+    "crates/audit-model",
+    "crates/audit-complex",
+    "crates/audit-inference",
+    "crates/audit-ledger",
+    "crates/audit-hdf5",
+    "crates/audit-runner",
+    "crates/audit-integration",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+publish = false
+
+[workspace.dependencies]
+audit-core = { path = "crates/audit-core" }

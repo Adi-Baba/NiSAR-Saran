@@ -1,0 +1,9 @@
+# Core NISAR L2 GCOV hotspot audit
+h5py>=3.10
+numpy>=1.26
+scipy>=1.11
+
+# Figures and optional vector-overlap check
+matplotlib>=3.8
+geopandas>=0.14
+pyogrio>=0.9

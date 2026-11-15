@@ -1,0 +1,15 @@
+[package]
+name = "audit-integration"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[dependencies]
+audit-core = { path = "../audit-core" }
+audit-distribution = { path = "../audit-distribution" }
+audit-spatial = { path = "../audit-spatial" }
+audit-model = { path = "../audit-model" }
+audit-complex = { path = "../audit-complex" }
+audit-inference = { path = "../audit-inference" }
+audit-ledger = { path = "../audit-ledger" }

@@ -1,0 +1,76 @@
+nz_gcov_qualification=1
+tool=nz h5-qualify
+executable_path=external_nisar-zeta_binary_not_in_this_repository
+executable_bytes=7953600
+executable_sha256=39b9d3477b2adf365558192202fae067b242216ed6c89c49512840fef92729d0
+before_path=data/source/New/NISAR_L2_PR_GCOV_028_026_A_015_4005_DHDH_A_20260814T234704_20260814T234738_P05023_N_F_J_001.h5
+before_bytes=6857687040
+before_sha256=5654bff526e0c5e6d76f73ad551fb8452660b428879b9f921798e1ce0e0f5552
+after_path=data/source/New/NISAR_L2_PR_GCOV_029_026_A_015_4005_DHDH_A_20260826T234704_20260826T234738_P05023_N_F_J_001.h5
+after_bytes=6853492736
+after_sha256=3a95175ad8453fffc8dffbdb4767fcd05a3add544067b377e6c1d10d00bfa02f
+ident:zeroDopplerStartTime:before=[2026-08-14T23:47:04.000000000] after=[2026-08-26T23:47:04.000000000] differ_by_design
+ident:zeroDopplerEndTime:before=[2026-08-14T23:47:38.999342105] after=[2026-08-26T23:47:38.999342105] differ_by_design
+ident:absoluteOrbitNumber:before=[5488] after=[5661] differ_by_design
+ident:trackNumber:before=[26] after=[26] match
+ident:frameNumber:before=[15] after=[15] match
+ident:lookDirection:before=[Left] after=[Left] match
+ident:orbitPassDirection:before=[Ascending] after=[Ascending] match
+ident:productType:before=[GCOV] after=[GCOV] match
+ident:productVersion:before=[1.0.11] after=[1.0.11] match
+ident:productSpecificationVersion:before=[1.5.0] after=[1.5.0] match
+ident:compositeReleaseId:before=[P05023] after=[P05023] match
+ident:processingDateTime:before=[2026-08-20T14:03:11] after=[2026-08-28T21:29:44] differ_by_design
+catalog:counts:before=288 after=288
+grid:frequencyA/HHHH:shape_before=[34344, 34920] shape_after=[34344, 34920] dtype_before=Float(U4) dtype_after=Float(U4) chunk_before=Some([512, 512]) chunk_after=Some([512, 512]) match
+grid:frequencyA/HVHV:shape_before=[34344, 34920] shape_after=[34344, 34920] dtype_before=Float(U4) dtype_after=Float(U4) chunk_before=Some([512, 512]) chunk_after=Some([512, 512]) match
+grid:frequencyA/mask:shape_before=[34344, 34920] shape_after=[34344, 34920] dtype_before=Unsigned(U1) dtype_after=Unsigned(U1) chunk_before=Some([512, 512]) chunk_after=Some([512, 512]) match
+grid:frequencyA/numberOfLooks:shape_before=[34344, 34920] shape_after=[34344, 34920] dtype_before=Float(U4) dtype_after=Float(U4) chunk_before=Some([512, 512]) chunk_after=Some([512, 512]) match
+grid:frequencyA/numberOfSubSwaths:shape_before=[] shape_after=[] dtype_before=Unsigned(U1) dtype_after=Unsigned(U1) match
+grid:frequencyA/projection:shape_before=[] shape_after=[] dtype_before=Unsigned(U4) dtype_after=Unsigned(U4) match
+grid:frequencyA/xCoordinateSpacing:shape_before=[] shape_after=[] dtype_before=Float(U8) dtype_after=Float(U8) match
+grid:frequencyA/yCoordinateSpacing:shape_before=[] shape_after=[] dtype_before=Float(U8) dtype_after=Float(U8) match
+grid:frequencyB/HHHH:shape_before=[4293, 4365] shape_after=[4293, 4365] dtype_before=Float(U4) dtype_after=Float(U4) chunk_before=Some([512, 512]) chunk_after=Some([512, 512]) match
+grid:frequencyB/HVHV:shape_before=[4293, 4365] shape_after=[4293, 4365] dtype_before=Float(U4) dtype_after=Float(U4) chunk_before=Some([512, 512]) chunk_after=Some([512, 512]) match
+grid:frequencyB/mask:shape_before=[4293, 4365] shape_after=[4293, 4365] dtype_before=Unsigned(U1) dtype_after=Unsigned(U1) chunk_before=Some([512, 512]) chunk_after=Some([512, 512]) match
+grid:frequencyB/numberOfLooks:shape_before=[4293, 4365] shape_after=[4293, 4365] dtype_before=Float(U4) dtype_after=Float(U4) chunk_before=Some([512, 512]) chunk_after=Some([512, 512]) match
+grid:frequencyB/numberOfSubSwaths:shape_before=[] shape_after=[] dtype_before=Unsigned(U1) dtype_after=Unsigned(U1) match
+grid:frequencyB/projection:shape_before=[] shape_after=[] dtype_before=Unsigned(U4) dtype_after=Unsigned(U4) match
+grid:frequencyB/xCoordinateSpacing:shape_before=[] shape_after=[] dtype_before=Float(U8) dtype_after=Float(U8) match
+grid:frequencyB/yCoordinateSpacing:shape_before=[] shape_after=[] dtype_before=Float(U8) dtype_after=Float(U8) match
+coord:frequencyA/xCoordinates:before_n=34920 before_first=573125.000000 before_last=922315.000000 after_n=34920 after_first=573125.000000 after_last=922315.000000 match
+coord:frequencyA/yCoordinates:before_n=34344 before_first=3131275.000000 before_last=2787845.000000 after_n=34344 after_first=3131275.000000 after_last=2787845.000000 match
+list:frequencyA/listOfPolarizations:before=[HH|HV] after=[HH|HV] match
+list:frequencyA/listOfCovarianceTerms:before=[HHHH|HVHV] after=[HHHH|HVHV] match
+attr:frequencyA/HHHH@units:before=summarized:kind=text;values=1;text_bytes=1;sha256=6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b;sample=1
+attr:frequencyA/HHHH@units:after=summarized:kind=text;values=1;text_bytes=1;sha256=6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b;sample=1
+attr:frequencyA/HHHH@long_name:before=summarized:kind=text;values=1;text_bytes=42;sha256=53bccae497247183af4316c76d63bc363744cc949a9dc4114f3428491d57a05e;sample=Geocoded polarimetric covariance term HHHH
+attr:frequencyA/HHHH@long_name:after=summarized:kind=text;values=1;text_bytes=42;sha256=53bccae497247183af4316c76d63bc363744cc949a9dc4114f3428491d57a05e;sample=Geocoded polarimetric covariance term HHHH
+attr:frequencyA/HHHH@grid_mapping:before=summarized:kind=text;values=1;text_bytes=10;sha256=1b250ea199bec73d392caad39d1167d6edc43c81f20edead86eea52c52b94fc1;sample=projection
+attr:frequencyA/HHHH@grid_mapping:after=summarized:kind=text;values=1;text_bytes=10;sha256=1b250ea199bec73d392caad39d1167d6edc43c81f20edead86eea52c52b94fc1;sample=projection
+attr:frequencyA/HVHV@units:before=summarized:kind=text;values=1;text_bytes=1;sha256=6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b;sample=1
+attr:frequencyA/HVHV@units:after=summarized:kind=text;values=1;text_bytes=1;sha256=6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b;sample=1
+attr:frequencyA/HVHV@long_name:before=summarized:kind=text;values=1;text_bytes=42;sha256=31ddb64723f5cd3270ec3c95095ecb85065b5c5d6cbc1c0c1e86c7dc1ac81b59;sample=Geocoded polarimetric covariance term HVHV
+attr:frequencyA/HVHV@long_name:after=summarized:kind=text;values=1;text_bytes=42;sha256=31ddb64723f5cd3270ec3c95095ecb85065b5c5d6cbc1c0c1e86c7dc1ac81b59;sample=Geocoded polarimetric covariance term HVHV
+attr:frequencyA/HVHV@grid_mapping:before=summarized:kind=text;values=1;text_bytes=10;sha256=1b250ea199bec73d392caad39d1167d6edc43c81f20edead86eea52c52b94fc1;sample=projection
+attr:frequencyA/HVHV@grid_mapping:after=summarized:kind=text;values=1;text_bytes=10;sha256=1b250ea199bec73d392caad39d1167d6edc43c81f20edead86eea52c52b94fc1;sample=projection
+coord:frequencyB/xCoordinates:before_n=4365 before_first=573160.000000 before_last=922280.000000 after_n=4365 after_first=573160.000000 after_last=922280.000000 match
+coord:frequencyB/yCoordinates:before_n=4293 before_first=3131240.000000 before_last=2787880.000000 after_n=4293 after_first=3131240.000000 after_last=2787880.000000 match
+list:frequencyB/listOfPolarizations:before=[HH|HV] after=[HH|HV] match
+list:frequencyB/listOfCovarianceTerms:before=[HHHH|HVHV] after=[HHHH|HVHV] match
+attr:frequencyB/HHHH@units:before=summarized:kind=text;values=1;text_bytes=1;sha256=6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b;sample=1
+attr:frequencyB/HHHH@units:after=summarized:kind=text;values=1;text_bytes=1;sha256=6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b;sample=1
+attr:frequencyB/HHHH@long_name:before=summarized:kind=text;values=1;text_bytes=42;sha256=53bccae497247183af4316c76d63bc363744cc949a9dc4114f3428491d57a05e;sample=Geocoded polarimetric covariance term HHHH
+attr:frequencyB/HHHH@long_name:after=summarized:kind=text;values=1;text_bytes=42;sha256=53bccae497247183af4316c76d63bc363744cc949a9dc4114f3428491d57a05e;sample=Geocoded polarimetric covariance term HHHH
+attr:frequencyB/HHHH@grid_mapping:before=summarized:kind=text;values=1;text_bytes=10;sha256=1b250ea199bec73d392caad39d1167d6edc43c81f20edead86eea52c52b94fc1;sample=projection
+attr:frequencyB/HHHH@grid_mapping:after=summarized:kind=text;values=1;text_bytes=10;sha256=1b250ea199bec73d392caad39d1167d6edc43c81f20edead86eea52c52b94fc1;sample=projection
+attr:frequencyB/HVHV@units:before=summarized:kind=text;values=1;text_bytes=1;sha256=6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b;sample=1
+attr:frequencyB/HVHV@units:after=summarized:kind=text;values=1;text_bytes=1;sha256=6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b;sample=1
+attr:frequencyB/HVHV@long_name:before=summarized:kind=text;values=1;text_bytes=42;sha256=31ddb64723f5cd3270ec3c95095ecb85065b5c5d6cbc1c0c1e86c7dc1ac81b59;sample=Geocoded polarimetric covariance term HVHV
+attr:frequencyB/HVHV@long_name:after=summarized:kind=text;values=1;text_bytes=42;sha256=31ddb64723f5cd3270ec3c95095ecb85065b5c5d6cbc1c0c1e86c7dc1ac81b59;sample=Geocoded polarimetric covariance term HVHV
+attr:frequencyB/HVHV@grid_mapping:before=summarized:kind=text;values=1;text_bytes=10;sha256=1b250ea199bec73d392caad39d1167d6edc43c81f20edead86eea52c52b94fc1;sample=projection
+attr:frequencyB/HVHV@grid_mapping:after=summarized:kind=text;values=1;text_bytes=10;sha256=1b250ea199bec73d392caad39d1167d6edc43c81f20edead86eea52c52b94fc1;sample=projection
+mask:frequencyA:rows=34344 cols=34920 before_invalid=41494407 before_outside=580038559 before_valid=577759514 after_invalid=41556675 after_outside=579970606 after_valid=577765199 joint_valid=573376411 union_valid=582148302
+mask:frequencyB:rows=4293 cols=4365 before_invalid=366788 before_outside=9056004 before_valid=9316153 after_invalid=366746 after_outside=9055906 after_valid=9316293 joint_valid=9246210 union_valid=9386236
+verdict=PASS ident_mismatch=0 grid_mismatch=0 mask_error=0 joint_valid_pixels=582622621
+claim_limit=observed calibrated-backscatter change or water-edge candidate only; no flooding, erosion, soil moisture, or causation without external context

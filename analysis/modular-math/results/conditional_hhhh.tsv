@@ -1,0 +1,2 @@
+response	predictors	n	intercept	coefficients	residual_scale	quality_overlap
+/science/LSAR/GCOV/grids/frequencyA/HHHH	/science/LSAR/GCOV/grids/frequencyA/mask|/science/LSAR/GCOV/grids/frequencyA/numberOfLooks|/science/LSAR/GCOV/grids/frequencyA/rtcGammaToSigmaFactor	95146	1.049875329957e0	0.000000000000e0|1.158815329276e-2|-2.807296901007e1	3.005715553436e0	4.434636401850e-2
