@@ -1,3 +1,3 @@
 # Deliverables
 
-Final submission presentation: `saran-shift-clickable-news-png-by-team-azarsatru.pptx`.
+NASA demo presentation: `saran-shift-clickable-news-png-by-team-azarsatru.pptx` — 7 slides total, including title and introduction.
