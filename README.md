@@ -2,6 +2,12 @@
 
 Evidence-first audit of a localized NISAR L2 GCOV backscatter change near Saran, Bihar. The project identifies a compact **candidate surface change** between 14 and 26 August 2026; it does **not** claim a confirmed flood.
 
+## What was the anomaly?
+
+The anomaly is a localized, unusually large radar-backscatter increase between the two NISAR observations. The analysis found 90 connected Frequency-B cells on an 80 m grid near Saran: HHHH increased by an average of **+9.29 dB**, HVHV increased by **+3.00 dB**, and the same location also increased in Frequency-A HHHH. Number-of-looks and masks stayed effectively unchanged. This supports a real mapped scene change, but does not identify its cause. It could involve water, wet soil, vegetation, geometry, or another surface/processing effect.
+
+Start with the [hotspot audit report](analysis/modular-math/hotspot-artifacts/hotspot_overlay_report.md), then inspect the [90-cell footprint](analysis/modular-math/hotspot-artifacts/frequencyB_hotspot_footprint.geojson), [machine-readable summary](analysis/modular-math/hotspot-artifacts/frequencyB_hotspot_summary.json), and [submission presentation](deliverables/saran-shift-clickable-news-png-by-team-azarsatru.pptx).
+
 ## Project summary
 
 We developed a reproducible radar-change workflow for a matched NISAR L2 GCOV pair. It applies joint validity masking, one-pixel erosion, HHHH backscatter change in dB, a scene-relative q99.9 threshold, and 8-connected-component selection. The largest component is a 90-cell candidate near 84.4786°E, 25.9817°N, with mean Frequency-B HHHH change of +9.29 dB. Quality, sensitivity, cross-polarization, and cross-frequency checks are kept separate from causal interpretation. This matters because SAR change alone can result from water, vegetation, wet soil, geometry, or processing effects; the workflow makes those limits visible instead of converting change directly into a flood claim.
